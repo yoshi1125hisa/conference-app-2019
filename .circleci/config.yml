@@ -65,7 +65,7 @@ jobs:
       - run:
           name: Assemble apk
           command: |
-            ./gradlew clean assembleDebug --offline
+            ./gradlew clean assembleRelease --offline
       - store_artifacts:
           path: frontend/android/build/outputs/apk
       - run: *download_dpg
