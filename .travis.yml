@@ -1,0 +1,46 @@
+branches:
+  only:
+  - master
+  - release
+
+matrix:
+  include:
+    - language: android
+      sudo: required
+      jdk: oraclejdk8
+      before_cache:
+        - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+        - rm -rf $HOME/.gradle/caches/*/plugin-resolution/
+      cache:
+        directories:
+          - $HOME/.gradle
+          - $HOME/.android
+          - .gradle
+      before_install:
+        - ./.travis/android/before_install.bash
+      android:
+        components:
+          - platform-tools
+          - android-28
+          - build-tools-28.0.3
+          - extra-google-m2repository
+          - extra-android-m2repository
+          - tools
+        licenses:
+          - android-sdk-preview-license-.+
+          - android-sdk-license-.+
+          - google-gdk-license-.+
+      script: .travis/android/run.bash
+
+    - language: objective-c
+      os: osx
+      osx_image: xcode9.4
+      podfile: frontend/ios/Podfile
+      gem_file: frontend/ios/Gemfile
+      xcode_workspace: frontend/ios/DroidKaigi\ 2019.xcworkspace
+      cache:
+        - gemfile
+        - cocoapods
+      before_install:
+        - ./.travis/ios/before_install.bash
+      script: .travis/ios/run.bash
