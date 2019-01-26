@@ -3,6 +3,7 @@ branches:
   - enable_travis
   - master
   - release
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/ # tag like v1.0.0
 
 matrix:
   include:
