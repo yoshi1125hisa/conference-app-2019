@@ -4,6 +4,11 @@ Initially, you need to run the commands below.
 
 ```
 cd frontend/ios
+
+brew install carthage # if you haven't installed it yet.
+
+# Please make sure ruby and bundler are available
+
 make init
 ```
 

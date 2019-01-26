@@ -36,13 +36,13 @@ matrix:
 
     - language: objective-c
       os: osx
-      osx_image: xcode9.4
-      podfile: frontend/ios/Podfile
-      gem_file: frontend/ios/Gemfile
+      osx_image: xcode10.1
       xcode_workspace: frontend/ios/DroidKaigi\ 2019.xcworkspace
       cache:
-        - gemfile
-        - cocoapods
+        - directories:
+          - ios/frontend/vendor/bundle
+          - ios/frontend/Pods
+          - ios/frontend/Carthage
       before_install:
         - ./.travis/ios/before_install.bash
       script: .travis/ios/run.bash

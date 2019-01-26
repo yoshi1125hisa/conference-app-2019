@@ -4,4 +4,5 @@ set -eu
 
 cd frontend/ios
 
+bundle install
 make init
