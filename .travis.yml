@@ -1,5 +1,6 @@
 branches:
   only:
+  - enable_travis
   - master
   - release
 
