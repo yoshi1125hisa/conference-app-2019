@@ -43,6 +43,11 @@ matrix:
           - ios/frontend/vendor/bundle
           - ios/frontend/Pods
           - ios/frontend/Carthage
+          - $HOME/.gradle
+          - $HOME/.android
+          - .gradle
+      env:
+        - JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
       before_install:
         - ./.travis/ios/before_install.bash
       script: .travis/ios/run.bash

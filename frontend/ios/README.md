@@ -51,3 +51,15 @@ Please open `DroidKaigi 2019.xcworkspace` instead of `DroidKaigi 2019.xcodeproj`
 ## java.lang.UnsupportedClassVersionError: org/jetbrains/kotlin/lexer/KotlinLexer
 
 Maybe you use an older version of JDK. [Update JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) on your computer and try building again.
+
+## Could not create service of type ScriptPluginFactory using BuildScopeServices.createScriptPluginFactory()
+
+If you get errors like below when running gradle stuff, please try to switch jdk to 1.8.
+
+e.g. Run `export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)`
+
+```
+* What went wrong:
+Could not create service of type ScriptPluginFactory using BuildScopeServices.createScriptPluginFactory().
+> Could not create service of type PluginResolutionStrategyInternal using BuildScopeServices.createPluginResolutionStrategy().
+```

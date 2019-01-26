@@ -6,3 +6,5 @@ cd frontend/ios
 
 bundle install
 make init
+
+./gradlew androidDependenciesExtra getDependencies
