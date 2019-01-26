@@ -47,6 +47,3 @@ matrix:
     before_install:
     - "./.travis/ios/before_install.bash"
     script: ".travis/ios/run.bash"
-env:
-  matrix:
-    secure: EROWYQpBxPPy640nt3EfwoSHutbzt/6UW3KvDC2e3O6WzyoV7Ffi3X2kR1QKBp40fvoZuaOESPCEEBKNHthmm1ACXdQB+4o5Y5UNYMXvWB2QrABkVveUis1mwZ4GnIFipG/+3AxFQoHTvK0C6AFqL8nSOtJqp0Tl6pJU+26Ln9MbgWgHY/vDK+tGEsEIRcnZAVLE7hMUENVe6HwY6e2gDGZXL/wdEE8sXEKaab33jlsL2SjevntXKXECiHHc+aKd6koo6/XhW3c4meHIlc0oBMMuKIBCfJmGSIlZveMdj4yUzrwMQcUKVDInDI1/5jQNITVgASE9eQSK6YYrAw5o4oiwYhlGe6qJdpN3RJ+ezb8yCfmewsgtauB85LcVs0iWiLawzRWO9aqqwJXE8cC73uEMlQRqVsmIGLO53iiTul7nbq6IVe43dhHKAtpvnjpc3YuknaqLpbkS8tyz0gSHXbyT6Nre8cXb095D/NS9tB4auFiVaeXszWHiKzG9hS2UR4RSvCBsvp+XqtiJcTVqVeX8xKM4ixKFEnfim5KMyEpK4qeuOVhsDwRZFPwsOCZFfBabiSeOIIjUIycSqs3pXwdi5CdJmNpg/5gWllrpO7q3Pv6w2QCreGFFPJkJkx1uYdFqobGlu+FbCK+YidEBKOcz5Gkvy6rlS0cW4/vlyHk=
