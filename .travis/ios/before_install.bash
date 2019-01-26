@@ -2,10 +2,13 @@
 
 set -eu
 
-cd frontend/ios
+pushd frontend/ios
 
 bundle install
-make init
+carthage bootstrap --platform ios --cache-builds
+bunlde exec pod install
+
+popd
 
 brew tap caskroom/versions
 brew cask install java8
