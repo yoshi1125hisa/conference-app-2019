@@ -6,7 +6,7 @@ pushd frontend/ios
 
 bundle install
 carthage bootstrap --platform ios --cache-builds
-bunlde exec pod install
+bundle exec pod install
 
 popd
 

@@ -3,7 +3,7 @@
 ## Minimum Requirements
 
 - XCode 10.1 (Swift 4.2.1)
-- JDK 1.8
+- JDK 1.8 (never use higher jdk versions)
 
 Initially, you need to run the commands below.
 

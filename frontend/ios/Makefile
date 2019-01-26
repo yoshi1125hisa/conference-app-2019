@@ -3,9 +3,9 @@
 init:
 	bundle install
 	carthage bootstrap --platform ios --cache-builds
-	bunlde exec pod install --repo-update
+	bundle exec pod install --repo-update
 
 post_checkout:
 	bundle install
 	carthage bootstrap --platform ios --cache-builds
-	bunlde exec pod install
+	bundle exec pod install
